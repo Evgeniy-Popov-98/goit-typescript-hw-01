@@ -21,7 +21,3 @@ function calc(num1: number, num2: number): number {
 function customError(): never {
   throw new Error("Error");
 }
-
-console.log(showMessage("Hello!"));
-console.log(calc(1, 2));
-console.log(customError());

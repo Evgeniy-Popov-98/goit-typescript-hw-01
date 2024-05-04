@@ -7,10 +7,7 @@ type AllType = {
 
 type NewType = Pick<AllType, "name" | "position" | "color" | "weight">;
 
-function compare(
-  top: AllType,
-  bottom: AllType
-): NewType<Pick<AllType, "name" | "position" | "color" | "weight">> {
+function compare(top: NewType, bottom: NewType): AllType {
   return {
     name: top.name,
     color: top.color,
